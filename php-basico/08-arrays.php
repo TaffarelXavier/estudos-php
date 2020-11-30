@@ -36,4 +36,8 @@
         echo "<li>$item</li>";
     }
 
-    echo "</ul>";
+    echo "</ul> <hr />";
+
+    echo "Número de classes disponíveis: " . count($classes) . "<br />";
+    $itens = count($equipamento);
+    echo "Número de itens: $itens";
