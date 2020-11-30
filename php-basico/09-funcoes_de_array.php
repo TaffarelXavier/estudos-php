@@ -68,3 +68,18 @@
 
   $numeros = [1, 505, -35, 4];
   echo array_sum($numeros);
+
+  echo "<hr />";
+
+  $data = "08/06/2003";
+  $tipo = ["Dia", "Mês", "Ano"];
+  $dataArr = explode("/", $data);
+  $tipoData = array_combine($tipo, $dataArr);
+  foreach($tipoData as $posição => $valor) {
+    echo "$posição: $valor<br />";
+  }
+
+  echo "<hr />";
+
+  $dataString = implode("/", $dataArr);
+  echo $dataString;
