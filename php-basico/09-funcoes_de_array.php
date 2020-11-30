@@ -45,3 +45,26 @@
   print_r($motos);
   echo "<br /> Valor excluído: " . array_shift($motos) . "<br />";
   print_r($motos);
+
+  echo "<hr />";
+
+  $frutas = ["Uva", "Laranja", "Banana"];
+  print_r($frutas);
+  array_unshift($frutas, "Manga", "Acerola");
+  echo "<br />";
+  print_r($frutas);
+  array_push($frutas, "Mamão", "Melancia");
+  echo "<br />";
+  print_r($frutas);
+
+  echo "<hr />";
+
+  $posições = ["Ouro", "Prata", "Bronze"];
+  $competidores = ["Maria", "Pedro", "José"];
+  $resultado = array_combine($posições, $competidores);
+  print_r($resultado);
+
+  echo "<hr />";
+
+  $numeros = [1, 505, -35, 4];
+  echo array_sum($numeros);
