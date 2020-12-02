@@ -66,7 +66,7 @@
       width: 350px;
     }
 
-    form > input {
+    form button {
       position: absolute;
       background: #66bb66;
       border: 2.5px solid #66bb66;
@@ -83,7 +83,7 @@
       transition: all .3s;
     }
 
-    form > input:hover {
+    form button:hover {
       border: 2.5px solid #66bb66;
       background: white;
       color: #66bb66;
@@ -93,7 +93,7 @@
 </head>
 <body>
   
-  <form action="dados.php" method="POST">
+  <form action="dados.php" method="GET">
     <h3>Formulário</h3>
     <div class="input-container">
       <label for="nome">Nome</label> <br />
@@ -103,7 +103,7 @@
       <label for="email">E-mail</label> <br />
       <input type="email" name="email" placeholder="Digite seu e-mail" />
     </div>
-    <input type="submit" name="enviar" value="Enviar" />
+    <button type="submit">Enviar</button>
   </form> 
 
 </body>
