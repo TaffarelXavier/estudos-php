@@ -38,3 +38,26 @@
   echo "<hr />";
 
   echo strpos($texto, "2022");
+
+  echo "<hr />";
+
+  $db = 1350.25;
+  $preço = number_format($db, 2, ",", ".");
+  echo "O valor do produto é R$ $preço";
+
+  echo "<hr />";
+
+  echo round($db);
+
+  echo "<hr />";
+
+  echo ceil($db);
+
+  echo "<hr />";
+
+  echo floor($db);
+
+  echo "<hr />";
+
+  $d20 = rand(1, 20);
+  echo "O resultado do d20 foi $d20";
