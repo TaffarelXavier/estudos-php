@@ -1,16 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRUD</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body>
-  
-  
+<?php include_once "includes/header.php"; ?>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <div class="row">
+    <div class="col s12 m6 push-m3">
+      <h3 class="light">Clientes</h3>
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Nome: </th>
+            <th>Sobrenome: </th>
+            <th>E-mail: </th>
+            <th>Idade: </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rafael</td>
+            <td>Diehl</td>
+            <td>rafaeljuliani1984@gmail.com</td>
+            <td>17</td>
+            <td><a href="#" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
+            <td><a href="#" class="btn-floating red"><i class="material-icons">delete</i></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a href="#" class="btn">Adicionar cliente</a>
+    </div>
+  </div>
 
-</body>
-</html>
+<?php include_once "includes/footer.php"; ?>
+  
