@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top right, #63D8DE, #E938F7);
+  position: relative;
+  color: #302F30;
+}
+
+.form-container {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-container form .input-container {
+  position: relative;
+  margin: 5px;
+  width: 100%;
+}
+
+.form-container form .input-container label {
+  font-size: 12.5px;
+}
+
+.form-container form .input-container input {
+  border: none;
+  border-bottom: 1px solid #302f30;
+  padding: 8px 8px 8px 25px;
+  width: 100%;
+}
+
+.form-container form .input-container i {
+  position: absolute;
+  font-size: 13.5px;
+  left: 5px;
+  bottom: 9.5px;
+}
+
+.form-container form button {
+  background-color: #9997E8;
+  border: 2px solid #9997E8;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  border-radius: 30px;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: white;
+  margin-top: 2rem;
+  transition: all .5s;
+}
+
+.form-container form button:hover {
+  color: #9997E8;
+  background: white;
+  transition: all .5s;
+}
+
+.bg-squares {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-squares .square {
+  height: 420px;
+  width: 420px;
+  background: black;
+  margin: 5px;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0.15;
+  transform: rotate(-25deg);
+  overflow: hidden;
+}
+
+.bg-squares .white {
+  background: white;
+}
+
+.bg-squares .pink {
+  background: #990033;
+}
+
+.bg-squares .square-1 {
+  top: -100px;
+  left: -290px;
+}
+
+.bg-squares .square-2 {
+  bottom: -320px;
+  left: 20px;
+}
+
+.bg-squares .square-3 {
+  top: 70px;
+  right: -320px;
+}
