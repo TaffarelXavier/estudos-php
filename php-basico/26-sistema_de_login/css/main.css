@@ -17,6 +17,22 @@ body {
   color: #302F30;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  background: #C152D4;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-top: 0.8rem;
+  transition: background 0.5s;
+}
+
+a:hover {
+  background: white;
+  color: #C152D4;
+  transition: background 0.5s;
+}
+
 .form-container {
   background: white;
   border: none;
@@ -81,6 +97,13 @@ body {
   color: #9997E8;
   background: white;
   transition: all .5s;
+}
+
+.form-container .error {
+  color: #dd2240;
+  font-family: Arial, sans-serif;
+  margin-top: 1.5rem;
+  font-size: 13px;
 }
 
 .bg-squares {
