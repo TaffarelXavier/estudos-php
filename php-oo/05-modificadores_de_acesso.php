@@ -14,11 +14,11 @@
     protected $cor;
     public $ano;
 
-    public function Andar() {
+    protected function Andar() {
       echo "Andou";
     }
 
-    public function Parar() {
+    private function Parar() {
       echo "Parou";
     }
   }
@@ -44,12 +44,13 @@
     public function getCor() {
       echo $this->cor;
     }
-  }
 
-  class Moto extends Veiculo {
+    public function permitirAndar() {
+      $this->Andar();
+    }
 
-    public function darGrau() {
-      echo "Dando grau em 3...2...1...";
+    public function permitirParar() {
+      $this->Parar();
     }
   }
 
@@ -65,3 +66,8 @@
   echo "<br />";
 
   var_dump($carro);
+
+  echo "<Hr />";
+
+  $carro->permitirAndar();
+  $carro->permitirParar();
