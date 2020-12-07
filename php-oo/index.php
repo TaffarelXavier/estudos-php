@@ -1,27 +1,19 @@
 <?php
 
-  /*
-  *  Aula 1 - Classes, Atributos e Métodos
-  * 
-  *  class Pessoa {
-  *    public $nome;
-  *    public $idade;
-  *  
-  *    public function Falar() {
-  *      echo "Meu nome é " . $this->nome . " e minha idade é " . $this->idade;
-  *    }
-  *  }
-  *  
-  *  $rafael = new Pessoa();
-  *  $rafael->nome = "Rafael Diehl";
-  *  $rafael->idade = 17;
-  *  $rafael->Falar();
-  *
-  */
-
   class Login {
     private $email;
     private $senha;
+    private $nome;
+
+    public function __construct($email, $senha, $nome) {
+      $this->nome = $nome;
+      $this->setEmail($email);
+      $this->setSenha($senha);
+    }
+
+    public function getNome() {
+      return $this->nome;
+    }
 
     public function getEmail() {
       return $this->email;
@@ -49,10 +41,8 @@
     }
   }
 
-  $logar = new Login();
-  $logar->setEmail("(teste)/\/\/@teste.com");
-  $logar->setSenha("123456");
+  $logar = new Login("teste@teste.com", "123456", "Rafael Diehl");
   $logar->Logar();
 
   echo "<br /> <br />";
-  echo "E-mail: " . $logar->getEmail() . "<br />Senha: " . $logar->getSenha();
+  echo  $logar->getNome();
