@@ -1,0 +1,13 @@
+{
+    "name": "rafaeldiehl/composer",
+    "description": "Teste composer",
+    "require": {
+        "dompdf/dompdf": "^0.8.6"
+    },
+    "authors": [
+        {
+            "name": "Rafael Diehl",
+            "email": "rafaeljuliani1984@gmail.com"
+        }
+    ]
+}
