@@ -1,5 +1,7 @@
 <?php
 
+  namespace app\model;
+
   require_once('senha.php');
 
   class Conexao {
@@ -14,8 +16,8 @@
           // Apague a linha acima e descomente a linha abaixo
           // ''
         );
-      } else {
-        return self::$instance;
       }
+      
+      return self::$instance;
     }
   }
