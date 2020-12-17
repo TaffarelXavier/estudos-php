@@ -39,7 +39,12 @@
       $stmt->execute();
     }
 
-    public function delete($id) {
-      
+    public function delete($id, $connConfig) {
+      $sql = 'DELETE FROM produtos WHERE id = :id';
+
+      $stmt = Conexao::getConn($connConfig)->prepare($sql);
+      $stmt->bindParam(':id', $id);
+
+      $stmt->execute();
     }
   }

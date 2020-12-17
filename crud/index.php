@@ -6,6 +6,9 @@
   $produtoDao = new \App\Model\ProdutoDao();
 
   include_once 'includes/header.php';
+
+  include_once 'includes/delete.php';
+
   include_once 'includes/form.php';
   include_once 'includes/list.php';
 
