@@ -9,7 +9,7 @@
 
       if(!isset(self::$instance)) {
         self::$instance = new \PDO(
-          'mysql:host=localhost; dbname=pdo; charset=utf8',
+          'mysql:host=localhost; dbname='. $config['name'] .'; charset=utf8',
           $config['username'],
           $config['password']
         );
