@@ -52,6 +52,7 @@ echo substr($string,0,10);
       public function update($id, $data) {
           $this->db->where('id', $id);
           $this->db->update($this->table, $data);
+          // OU $this->db->update($this->table, $data, array('id' => $id));
           return true;
       }
 
