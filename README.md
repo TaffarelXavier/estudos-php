@@ -26,3 +26,41 @@ echo substr($string,0,10);
 // Saída: Ferramenta
 ```
 
+## CRUD Codeigniter 3
+```php
+<?php
+
+  class Blog_model extends CI_Model {
+
+      private $table = 'tblcentral_notificacoes';
+      public static $fillable = ['id', 'assunto', 'message', 'mail_or_sms', 'cargos'];
+
+      public function getAll() {
+          return $this->db->get($this->table)->result();
+      }
+
+      public function insert($data) {
+          $this->db->insert($this->table, $data);
+          return $this->db->insert_id();
+      }
+
+      public function findById($id) {
+          $this->db->where('id', $id);
+          return $this->db->get($this->table)->result();
+      }
+
+      public function update($id, $data) {
+          $this->db->where('id', $id);
+          $this->db->update($this->table, $data);
+          return true;
+      }
+
+      public function delete($id) {
+          $this->db->where('id', $id);
+          $this->db->delete($this->table);
+          return true;
+      }
+
+  }
+  
+```
