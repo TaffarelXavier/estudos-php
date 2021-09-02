@@ -16,5 +16,13 @@ $b = strip_tags($input, "<strong><em>");
 __Formatando um número com zeros à esquerda em PHP__
 ```php
 echo sprintf('%08d', 1234);
-//Saída: 00001234
+// Saída: 00001234
 ```
+
+__Retorna uma parte de uma string__
+```php
+$string = "Ferramenta para programação";
+echo substr($string,0,10);
+// Saída: Ferramenta
+```
+
