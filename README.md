@@ -65,3 +65,9 @@ echo substr($string,0,10);
   }
   
 ```
+
+```php
+echo PHP_EOL
+// Saída: \r\n
+```
+
