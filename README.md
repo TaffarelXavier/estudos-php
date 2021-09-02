@@ -5,3 +5,13 @@
   <br />
   <img src="https://refactoring.guru/images/patterns/languages/php.png" width="600" />
 </div>
+
+__Removing HTML from a string__
+```php
+    $input = "<blink><strong>Hello!</strong></blink>";
+    $a = strip_tags($input);
+    $b = strip_tags($input, "<strong><em>");
+// Saída para $a: Hello!
+// Saída para $b: <strong>Hello!</strong>
+
+```
