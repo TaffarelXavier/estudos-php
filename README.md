@@ -71,3 +71,25 @@ echo PHP_EOL
 // Saída: \r\n
 ```
 
+### PHP Convert cents to dollars (Converter centavos para dólares)
+
+https://stackoverflow.com/questions/30713928/php-convert-cents-to-dollars/30714110
+```php
+// Entrada:
+050
+1000
+1250
+2999
+
+// Saída desejada:
+0.50
+10.00
+12.50
+29.99
+
+$value = 2999;
+
+echo number_format(($value /100), 2, '.', ' ');
+
+// Saída: 29.99
+```
